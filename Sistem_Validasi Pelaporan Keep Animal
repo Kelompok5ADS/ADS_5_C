@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sistem Informasi Keep Animal</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+    	<h1><center><font color=white> FORM PELAPORAN </color></h1>
+		<h2><center>SISTEM INFORMASI KEEP ANIMAL</h2>
+		<h3><center><font color=white>INDONESIA</color></h3>
+		<body background="kebun-binatang.jpg">
+        <form class="contact_form" action="" method="">
+        	<ul>
+            	<li>
+                	<label for="nama">Nama :</label>
+                	<input type="text" pattern="[A-Za-z-][_]" nama="nama" placeholder="Isikan Nama Anda" required>
+                </li>
+				<li>
+                	<label for="usia">Usia :</label>
+                	<input type="number" min="17" max="30" usia="nama" placeholder="Isikan Usia Anda" required<p>Usia Min 17-30</p>
+                </li>
+                <li>
+                	<label for="email">Email :</label>
+                    <input type="email" type="text" placeholder="Isikan Email Anda" required>
+                    <span class="form_hint">Contohnya:nama_email@host.com"</span>
+                </li>
+                <li>
+                	<label for="website">Website :</label>
+                    <input name="website" type="text" placeholder="Isikan Website Anda" required pattern="(http|https)://.+">
+                    <span class="form_hint">example "http://elektro.um.ac.id"</span>
+                </li>
+				<li>
+                	<label for="password">Password :</label>
+                    <input type="password" placeholder="Isikan Password Anda" required>
+                    <span class="form_hint">Semua Karakter, min 8"</span>
+                </li>
+                <li>
+    				<label for="message">Komentar:</label>
+    				<textarea name="message" cols="40" rows="6" placeholder="Isikan Keterangan Berkas yang diupload. Isikan Lengkap jika berkas Lengkap,Jika ada yang kurang isikan berkas apa yang kurang"required></textarea>
+				</li>
+                <li>
+   					<button class="submit" type="submit">SUBMIT</button>
+				</li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
