@@ -4,6 +4,7 @@ class Dashboard extends CI_Controller{
 		parent::__construct();
 		if($this->session->userdata('masuk') !=TRUE){
             $url=base_url('administrator');
+            $get_data($url);
             redirect($url);
         };
 		$this->load->model('m_pengunjung');
